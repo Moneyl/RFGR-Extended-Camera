@@ -1,5 +1,5 @@
-﻿#include "Globals.hpp"
-#include "SnippetManager.hpp"
+﻿//#include "Globals.hpp"
+//#include "SnippetManager.hpp"
 #include "CameraWrapper.hpp"
 
 //std::ofstream LogFile;

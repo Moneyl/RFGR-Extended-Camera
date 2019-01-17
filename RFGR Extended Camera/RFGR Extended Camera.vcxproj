@@ -171,14 +171,16 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="RFG Extended Camera2.ico" />
+    <ClInclude Include="Globals.hpp" />
+    <ClInclude Include="PCH.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RFGR Extended Camera Injector.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Globals.hpp" />
-    <ClInclude Include="PCH.hpp" />
+    <Image Include="RFG Extended Camera2.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

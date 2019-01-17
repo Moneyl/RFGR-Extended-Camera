@@ -1,8 +1,7 @@
 #pragma once
-#include "Globals.h"
-#include "SnippetManager.h"
-//#include "Hooks.h"
-#include "Functions.h"
+//#include "Globals.hpp"
+//#include "SnippetManager.hpp"
+#include "Functions.hpp"
 
 enum CameraDirection
 {

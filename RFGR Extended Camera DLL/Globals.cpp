@@ -3,8 +3,8 @@
 float pi = 3.14159265f;
 
 json MainConfig;
-float DefaultFreeCameraSpeed = 0.3;
-float DefaultRotationSpeed = 0.7;
+float DefaultFreeCameraSpeed = 0.3f;
+float DefaultRotationSpeed = 0.7f;
 bool UseDebugConsole = false;
 
 int KeyDecreaseCameraSpeed = 0;

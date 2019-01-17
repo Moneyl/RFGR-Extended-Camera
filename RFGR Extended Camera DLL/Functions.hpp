@@ -1,6 +1,5 @@
 #pragma once
-
-#include "Globals.hpp"
+//#include "Globals.hpp"
 #include "SnippetManager.hpp"
 
 static void DisableCameraCode(DWORD AddressY, DWORD AddressZ) //Takes addresses for instructions affecting y and z camera coordinates. Alternatively x and z may work, since one piece seems to be shared between two coords.
@@ -34,12 +33,12 @@ static void RestoreCameraDirectionCode()
 }
 
 typedef void(__cdecl* F_HideHud)(bool HideHud);
-static F_HideHud HideHud;
+extern F_HideHud HideHud;
 
 typedef void(__cdecl* F_ShowFog)(bool ShowFog);
-static F_ShowFog ShowFog;
+extern F_ShowFog ShowFog;
 
-void HideFog(bool HideFog)
+static void HideFog(bool DoHideFog)
 {
-	ShowFog(!HideFog);
+	ShowFog(!DoHideFog);
 }

@@ -20,9 +20,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="RFG Extended Camera2.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <ClInclude Include="Globals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCH.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RFGR Extended Camera Injector.rc">
@@ -30,11 +39,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Globals.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PCH.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Image Include="RFG Extended Camera2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

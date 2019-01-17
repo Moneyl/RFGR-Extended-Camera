@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CameraWrapper.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="Globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SnippetManager.cpp" />
@@ -149,6 +150,9 @@
     <ClInclude Include="Functions.hpp" />
     <ClInclude Include="Globals.hpp" />
     <ClInclude Include="SnippetManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IncludeDiagram1.dgml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

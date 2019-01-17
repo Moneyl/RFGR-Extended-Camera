@@ -34,10 +34,10 @@
 
 #include "nlohmann/json.hpp"
 
-#pragma comment(lib, "dinput8.lib")
-#pragma comment(lib, "dxguid.lib")
+//#pragma comment(lib, "dinput8.lib")
+//#pragma comment(lib, "dxguid.lib")
 
-#include <dinput.h>
+//#include <dinput.h>
 
 // Include GLM core features
 #include <glm/vec2.hpp>
