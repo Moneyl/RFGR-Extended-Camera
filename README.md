@@ -3,3 +3,8 @@ Camera mod for Red Faction Guerrilla Re-mars-tered. Allows for free camera movem
 
 ## Gallery:
 
+![alt text](https://github.com/Moneyl/RFGR-Extended-Camera/blob/master/Gallery%20Images/GalleryTutorialArea.jpg "Tutorial area. HUD and fog disabled.")
+Tutorial area from above with the HUD and fog disabled.
+
+![alt text](https://github.com/Moneyl/RFGR-Extended-Camera/blob/master/Gallery%20Images/GalleryMountVogel.jpg "Mount Vogel. HUD and fog disabled.")
+Mount Vogel with the HUD and fog disabled.
