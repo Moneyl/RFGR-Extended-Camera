@@ -35,7 +35,7 @@ int main()
 			float Dummy1 = ProgramVersion + 32.3f + (rand() % (int)(ProgramVersion + 372.3f));
 			double Dummy2 = (8000.0 / ((double)ProgramVersion)) + 8.2 * ProgramVersion + (rand() % (int)(2 + pow(2, ProgramVersion)));
 			bool Dummy3 = (bool)ProgramVersion & (bool)(rand() % 222);
-			if (!InjectDLL(PID, ProgramPath + "/RFGR Script Loader.dll", Dummy1, Dummy2, Dummy3))
+			if (!InjectDLL(PID, ProgramPath + "/RFGR Extended Camera.dll", Dummy1, Dummy2, Dummy3))
 			{
 				ConsoleLog("Failure to inject dll. Closing injector in 5 seconds.\n", LOGERROR, false, true);
 			}
