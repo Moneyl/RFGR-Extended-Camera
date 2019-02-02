@@ -7,6 +7,7 @@ static bool PreExistingConsole = true;
 
 DWORD WINAPI MainThread(LPVOID Param)
 {
+	//Beep(600, 100);
 	if (UseDebugConsole)
 	{
 		FILE *pFile = nullptr;
@@ -27,10 +28,7 @@ DWORD WINAPI MainThread(LPVOID Param)
 
 	ConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleAttributes(ConsoleDefaultTextAttributes);
-
 	LoadDataFromConfig();
-
-	ConsoleLog("RFGR extended camera loaded.\n", LOGSUCCESS, true, true);
 
     uintptr_t ModuleBase = (uintptr_t)GetModuleHandle(NULL);
 	//std::cout << "ModuleBase, hex: " << std::hex << std::uppercase << ModuleBase << std::dec << ", decimal: " << ModuleBase << std::endl;
@@ -48,6 +46,12 @@ DWORD WINAPI MainThread(LPVOID Param)
 
 	ConsoleLog("Initialization Complete\n", LOGSUCCESS, false, true);
 	int MovementSleepTime = 4;
+
+	Beep(600, 100);
+	Beep(700, 100);
+	Beep(900, 200);
+
+	ConsoleLog("RFGR extended camera loaded.\n", LOGSUCCESS, true, true);
 
 	while (ExitKeysPressCount < 5)
 	{
@@ -141,13 +145,17 @@ DWORD WINAPI MainThread(LPVOID Param)
 	if (Camera.IsFreeCameraActive())
 	{
 		Camera.DeactivateFreeCamera();
-		Camera.DeactivateRotationControl();
+		//Camera.DeactivateRotationControl();
 	}
 	if (!HudVisible)
 	{
 		HideHud(false);
 		ShowFog(true);
 	}
+
+	Beep(900, 200);
+	Beep(700, 100);
+	Beep(600, 100);
 
     FreeLibraryAndExitThread((HMODULE)Param, 0);
     return 0;
