@@ -17,7 +17,7 @@ int main()
 	ConsoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	LoadDataFromConfig();
 
-	ConsoleLog("RFGR script loader injector started\n", LOGMESSAGE, true, true);
+	ConsoleLog("RFGR extended camera injector started\n", LOGMESSAGE, true, true);
 
 	std::string ProgramPath = fs::current_path().string();
 	SetConsoleAttributes(ConsoleMessageTextAttributes);
