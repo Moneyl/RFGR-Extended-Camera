@@ -133,6 +133,12 @@ DWORD WINAPI MainThread(LPVOID Param)
 			ShowFog(FogVisible);
 			Sleep(150);
         }
+		if (GetAsyncKeyState(VK_NUMPAD4) & 0x8000)
+		{
+			ConsoleLog("Setting camera speed to 0.01", LOGMESSAGE, false, true, true);
+			Camera.SetCameraSpeed(0.01f, false);
+			Sleep(50);
+		}
     }
 	
 	ConsoleLog("RFGR extended camera unloaded.\n\n", LOGSUCCESS, true, true);
